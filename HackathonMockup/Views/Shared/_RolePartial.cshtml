@@ -1,0 +1,6 @@
+﻿@model HackathonMockup.Models.Role
+
+<div class="list-inline @(Model.Obtained ? "text-success" : "text-secondary")">
+  <div class="h2 list-inline-item">@Model.Name - </div>
+  <input type="submit" class="h4 list-inline-item" value=@(Model.Obtained ? "Change" : Model.PurchaseText)>
+</div>

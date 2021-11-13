@@ -1,0 +1,18 @@
+﻿@model IEnumerable<HackathonMockup.Models.Challenge>
+
+<div class="container">
+  <div class="h1">Weekly Challenges</div>
+  <hr />
+
+  <div class="list-inline">
+    <div class="h2 text-primary list-inline-item">New challenges coming @DateTime.Now.AddDays(3).ToShortDateString()!</div>
+  </div>
+  <br />
+
+  @foreach(var challenge in Model)
+      {
+        @Html.Partial("_ChallengePartial", challenge)
+    <hr />
+      }
+
+</div>

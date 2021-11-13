@@ -1,0 +1,20 @@
+﻿<div class="border-end bg-white" id="sidebar-wrapper">
+  <div class="sidebar-heading border-bottom bg-light"><img style="width:50px" src="~/Content/images/ava4.png" /><img style="width:5rem" src="~/Content/images/badge.png" /></div>
+  <div class="sidebar-heading border-bottom bg-light">@Html.ActionLink("Change Avatar/Role", "ChangeDisplay")</div>
+  <div class="sidebar-heading border-bottom bg-light"> What would you like to do today Seeker?</div>
+  <div class="sidebar-heading border-bottom bg-light">Total accrued Points : 6034</div>
+  <div class="sidebar-heading border-bottom bg-light">Current Points : 2000</div>
+  <div class="sidebar-heading border-bottom bg-light">Points to Next Rank: 540</div>
+  <div class="sidebar-heading border-bottom bg-light">Class Ranking: #2</div>
+
+  <div class="list-group list-group-flush">
+    @Html.ActionLink("Home", "Index", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Map", "Map", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Class Leaderboards", "Leaderboard", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Challenges", "Challenges", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Purchase Rewards", "PurchaseRewards", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Daily Challenge", "DailyChallenge", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Recent Achievements", "RecentAchievements", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+    @Html.ActionLink("Role Advancement", "RoleAdvance", "Home", null, new { @class = "text-primary list-group-item list-group-item-action list-group-item-light p-3" })
+  </div>
+</div>

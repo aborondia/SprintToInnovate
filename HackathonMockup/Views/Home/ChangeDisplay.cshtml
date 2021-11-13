@@ -1,0 +1,19 @@
+﻿<div class="h1">Your currently held roles:</div>
+
+@foreach (HackathonMockup.Models.Role role in ViewBag.Roles)
+{
+  @Html.Partial("_RolePartial", role)
+}
+
+<hr />
+
+<div class="h1">Your purchased avatars:</div>
+
+<div class="container">
+  <div class="row">
+    @foreach (HackathonMockup.Models.AvatarChange avatar in ViewBag.Avatars)
+    {
+      @Html.Partial("_AvatarChangePartial", avatar)
+    }
+  </div>
+</div>
