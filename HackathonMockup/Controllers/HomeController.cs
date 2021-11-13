@@ -298,5 +298,33 @@ namespace HackathonMockup.Controllers
 
       return View();
     }
+
+    public ActionResult ViewAchievements()
+    {
+      var achievements = new List<Achievement>();
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Write a short essay on the SOLID principles in a way the a 5 year old could understand.",
+        Reward = 100
+      });
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Place in the top 10 high scores on this weeks assignment.",
+        Reward = 200
+      });
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Help a classmate solve a question/problem they have.",
+        Reward = 150
+      });
+
+      return View(achievements);
+    }
   }
 }
