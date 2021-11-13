@@ -173,11 +173,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Achievement.cs" />
     <Compile Include="Models\AvatarChange.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Challenge.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reward.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -272,6 +274,8 @@
     <Content Include="Views\Shared\_ChallengePartial.cshtml" />
     <Content Include="Views\Shared\_AvatarChangePartial.cshtml" />
     <Content Include="Views\Shared\_RolePartial.cshtml" />
+    <Content Include="Views\Shared\_RewardPartial.cshtml" />
+    <Content Include="Views\Shared\_AchievementPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,9 @@
+﻿@model HackathonMockup.Models.Achievement
+
+<div class="row text-success">
+  <div>
+    <div class="h2">Goal: @Model.Content</div>
+    <div class="h3">Points Earned: @Model.Reward</div>
+    <div class="h3">Completed on: @Model.CompletionDate.ToShortDateString()</div>
+  </div>
+</div>

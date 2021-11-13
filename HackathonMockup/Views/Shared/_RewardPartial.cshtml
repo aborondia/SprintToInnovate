@@ -1,0 +1,15 @@
+﻿@model HackathonMockup.Models.Reward
+
+<div class="list-inline h3">
+  @if (Model.IsImage)
+  {
+    <div class="list-inline-item" ><img src=@Model.ImageSource style="@Model.Style"/></div>
+  }
+  else
+  {
+    <div class="list-inline-item">@Model.Description</div>
+  }
+  <div class="list-inline-item">- @Model.Cost Points</div>
+  <input type="submit" value="@Model.ButtonText" class="list-inline-item">
+</div>
+<hr />

@@ -63,12 +63,136 @@ namespace HackathonMockup.Controllers
 
     public ActionResult PurchaseRewards()
     {
+      var classroomRewards = new List<Reward>();
+      var forumRewards = new List<Reward>();
+      var avatarRewards = new List<Reward>();
+
+      classroomRewards.Add(new Reward
+      {
+        ButtonText = "Early Weekend!",
+        Cost = 300,
+        Description = "Leave 15 minutes early this Friday!",
+        ImageSource = "",
+        IsImage = false
+      });
+
+      classroomRewards.Add(new Reward
+      {
+        ButtonText = "But really I know it...",
+        Cost = 400,
+        Description = "Choose 1 question on an upcoming quiz to skip & receive full credit for!",
+        ImageSource = "",
+        IsImage = false
+      });
+
+      classroomRewards.Add(new Reward
+      {
+        ButtonText = "I'm very generous",
+        Cost = 5000,
+        Description = "The instructor will buy pizza for the entire class!",
+        ImageSource = "",
+        IsImage = false
+      });
+
+      //------------------------------------
+      forumRewards.Add(new Reward
+      {
+        ButtonText = "Beautiful",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/sig1.png",
+        IsImage = true
+      });
+
+      forumRewards.Add(new Reward
+      {
+        ButtonText = "Stunning",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/sig2.png",
+        IsImage = true
+      });
+
+      forumRewards.Add(new Reward
+      {
+        ButtonText = "Avante Garde...",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/sig3.png",
+        IsImage = true
+      });
+
+      //-------------------------------------------
+      avatarRewards.Add(new Reward
+      {
+        ButtonText = "Yes Please!",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/acc1.png",
+        IsImage = true,
+        Style = "width:5rem"
+      });
+
+      avatarRewards.Add(new Reward
+      {
+        ButtonText = "Yes Please!",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/acc2.png",
+        IsImage = true,
+        Style = "width:5rem"
+      });
+
+      avatarRewards.Add(new Reward
+      {
+        ButtonText = "Yes Please!",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/acc3.png",
+        IsImage = true,
+        Style = "width:5rem"
+      });
+
+      avatarRewards.Add(new Reward
+      {
+        ButtonText = "Yes Please!",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/acc4.png",
+        IsImage = true,
+        Style = "width:5rem"
+      });
+
+      avatarRewards.Add(new Reward
+      {
+        ButtonText = "Yes Please!",
+        Cost = 1000,
+        Description = "",
+        ImageSource = "/Content/images/acc5.png",
+        IsImage = true,
+        Style = "width:5rem"
+      });
+
+
+
+      ViewBag.ClassroomRewards = classroomRewards;
+      ViewBag.Forumrewards = forumRewards;
+      ViewBag.AvatarRewards = avatarRewards;
+
       return View();
     }
 
     public ActionResult DailyChallenge()
     {
-      return View();
+      var challenge = new Challenge
+      {
+        Complete = false,
+        Content = "Help a classmate with a question/problem they have(you don't need to know the answer, just help!)",
+        Expires = DateTime.Now.AddDays(2),
+        Reward = 200
+      };
+
+      return View(challenge);
     }
 
     public ActionResult GroupSession()
@@ -78,7 +202,30 @@ namespace HackathonMockup.Controllers
 
     public ActionResult RecentAchievements()
     {
-      return View();
+      var achievements = new List<Achievement>();
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Write a short essay on the SOLID principles in a way the a 5 year old could understand.",
+        Reward = 100
+      });
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Place in the top 10 high scores on this weeks assignment.",
+        Reward = 200
+      });
+
+      achievements.Add(new Achievement
+      {
+        CompletionDate = DateTime.Now.AddDays(-2),
+        Content = "Help a classmate solve a question/problem they have.",
+        Reward = 150
+      });
+
+      return View(achievements);
     }
 
     public ActionResult RoleAdvance()
@@ -122,19 +269,20 @@ namespace HackathonMockup.Controllers
       });
 
       //--------------------------------------
-//      < div class="list-inline">
-//  <div class="h2 list-inline-item">Scout - </div>
-//  <input type = "submit" class="h4 list-inline-item" value="Change">
-//</div>
+      //      < div class="list-inline">
+      //  <div class="h2 list-inline-item">Scout - </div>
+      //  <input type = "submit" class="h4 list-inline-item" value="Change">
+      //</div>
 
-//<div class="list-inline">
-//  <div class="h2 list-inline-item">The Seeker - </div>
-//  <input type = "submit" class="text-secondary h4 list-inline-item" value="Current Role">
-//</div>
-      roles.Add(new Role{ 
-      Name = "Scout",
-      Cost = 0,
-      Obtained = true
+      //<div class="list-inline">
+      //  <div class="h2 list-inline-item">The Seeker - </div>
+      //  <input type = "submit" class="text-secondary h4 list-inline-item" value="Current Role">
+      //</div>
+      roles.Add(new Role
+      {
+        Name = "Scout",
+        Cost = 0,
+        Obtained = true
       });
 
       roles.Add(new Role

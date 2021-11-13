@@ -1,180 +1,32 @@
 ﻿<div class="h1">Purchase Rewards</div>
 
-<div class="h2">Classroom Perks</div>
 <div class="h2">Unlock more when you reach Rank 3!</div>
-<hr />
-<div class="list-inline h3">
-  <div class="list-inline-item">Leave 15 minutes early this Friday!</div>
-  <div class="list-inline-item">- 300 Points</div>
-  <input type="submit" value="Early Weekend!" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Choose 1 question on an upcoming quiz to skip & receive full credit for!</div>
-  <div class="list-inline-item">- 400 Points</div>
-  <input type="submit" value="But really I know it..." class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">The instructor will buy pizza for the entire class!</div>
-  <div class="list-inline-item">- 5000 Points</div>
-  <input type="submit" value="I'm very generous" class="list-inline-item">
-</div>
-<hr />
-
-<div class="h2">Roles</div>
-<hr />
-@*Scout <name>
-  Explorer <name>
-    <name>
-      , the Seeker
-      Leader <name>
-        Captain <name>
-          <name>
-            , Knower of Things
-            Quizmaster <name>
-              <name>
-                , Slayer of Pop Quizzes
-                Baron <name>
-                  Wizard <name>
-                    Warrior <name>*@
-
-<div class="h3">Advance to the next role for new perks & accessories Scout!</div>
 <br />
 
-<div class="list-inline h3">
-  <div class="list-inline-item">Explorer</div>
-  <div class="list-inline-item">- 10000 Points</div>
-  <input type="submit" value="To adventure!" class="list-inline-item">
-</div>
+<div class="h2">Classroom Perks</div>
 <hr />
-<br />
 
-<div class="list-inline h3">
-  <div class="list-inline-item">The Seeker</div>
-  <div class="list-inline-item">- 50000 Points</div>
-  <input type="submit" value="I will find the answers!" class="list-inline-item">
-</div>
-<hr />
-<br />
+@foreach (HackathonMockup.Models.Reward reward in ViewBag.ClassroomRewards)
+{
+  @Html.Partial("_rewardPartial", reward)
+}
 
-<div class="list-inline h3">
-  <div class="list-inline-item">Leader</div>
-  <div class="list-inline-item">- 50000 Points</div>
-  <input type="submit" value="Follow me!" class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Captain</div>
-  <div class="list-inline-item">- 30000 Points</div>
-  <input type="submit" value="We will defeat this quiz!" class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Knower of Things</div>
-  <div class="list-inline-item">- 100000 Points</div>
-  <input type="submit" value="I know things..." class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Slayer of Pop Quizzes</div>
-  <div class="list-inline-item">- 30000 Points</div>
-  <input type="submit" value="Quiz takes critical damage!" class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Wizard</div>
-  <div class="list-inline-item">- 30000 Points</div>
-  <input type="submit" value="Fireball!" class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Baron</div>
-  <div class="list-inline-item">- 40000 Points</div>
-  <input type="submit" value="Fancy." class="list-inline-item">
-</div>
-<hr />
-<br />
-
-<div class="list-inline h3">
-  <div class="list-inline-item">Warrior</div>
-  <div class="list-inline-item">- 30000 Points</div>
-  <input type="submit" value="This material does not stand a chance!" class="list-inline-item">
-</div>
-<hr />
 <br />
 
 <div class="h2">Forum Signatures</div>
 <hr />
 
-<div class="list-inline h3">
-  <img src="~/Content/images/sig1.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Beautiful" class="list-inline-item">
-</div>
-<hr />
+@foreach (HackathonMockup.Models.Reward reward in ViewBag.ForumRewards)
+{
+  @Html.Partial("_rewardPartial", reward)
+}
 
-<div class="list-inline h3">
-  <img src="~/Content/images/sig2.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Stunning" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <img src="~/Content/images/sig3.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Avante Garde..." class="list-inline-item">
-</div>
-<hr />
 <br />
 
 <div class="h2">Avatar Accessories</div>
 <hr />
 
-<div class="list-inline h3">
-  <img style="width:10rem" src="~/Content/images/acc1.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Yes Please!" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <img style="width:10rem" src="~/Content/images/acc2.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Yes Please!" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <img style="width:10rem" src="~/Content/images/acc3.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Yes Please!" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <img style="width:10rem" src="~/Content/images/acc4.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Yes Please!" class="list-inline-item">
-</div>
-<hr />
-
-<div class="list-inline h3">
-  <img style="width:10rem" src="~/Content/images/acc5.png" />
-  <div class="list-inline-item">- 1000 Points</div>
-  <input type="submit" value="Yes Please!" class="list-inline-item">
-</div>
-<hr />
+@foreach (HackathonMockup.Models.Reward reward in ViewBag.AvatarRewards)
+{
+  @Html.Partial("_rewardPartial", reward)
+}
