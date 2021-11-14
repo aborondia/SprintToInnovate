@@ -9,6 +9,7 @@ namespace HackathonMockup.Controllers
 {
   public class HomeController : Controller
   {
+    private static User user = new User { AvatarSource = "~/Content/images/ava4.png" };
     public ActionResult Index()
     {
       return View();
@@ -28,9 +29,14 @@ namespace HackathonMockup.Controllers
       return View();
     }
 
-    public PartialViewResult Sidebar()
+    public PartialViewResult Sidebar(string avatarSource = "")
     {
-      return PartialView("_SidebarPartial");
+      if (!string.IsNullOrEmpty(avatarSource))
+      {
+        user.AvatarSource = avatarSource;
+      }
+
+      return PartialView("_SidebarPartial", user);
     }
 
     public ActionResult Leaderboard()
@@ -70,7 +76,7 @@ namespace HackathonMockup.Controllers
       classroomRewards.Add(new Reward
       {
         ButtonText = "Early Weekend!",
-        Cost = 300,
+        Cost = 1000,
         Description = "Leave 15 minutes early this Friday!",
         ImageSource = "",
         IsImage = false
@@ -79,7 +85,7 @@ namespace HackathonMockup.Controllers
       classroomRewards.Add(new Reward
       {
         ButtonText = "But really I know it...",
-        Cost = 400,
+        Cost = 5000,
         Description = "Choose 1 question on an upcoming quiz to skip & receive full credit for!",
         ImageSource = "",
         IsImage = false
@@ -88,7 +94,7 @@ namespace HackathonMockup.Controllers
       classroomRewards.Add(new Reward
       {
         ButtonText = "I'm very generous",
-        Cost = 5000,
+        Cost = 20000,
         Description = "The instructor will buy pizza for the entire class!",
         ImageSource = "",
         IsImage = false
@@ -100,7 +106,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Beautiful",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/sig1.png",
+        ImageSource = "~/Content/images/sig1.png",
         IsImage = true
       });
 
@@ -109,7 +115,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Stunning",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/sig2.png",
+        ImageSource = "~/Content/images/sig2.png",
         IsImage = true
       });
 
@@ -118,7 +124,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Avante Garde...",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/sig3.png",
+        ImageSource = "~/Content/images/sig3.png",
         IsImage = true
       });
 
@@ -128,7 +134,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Yes Please!",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/acc1.png",
+        ImageSource = "~/Content/images/acc1.png",
         IsImage = true,
         Style = "width:5rem"
       });
@@ -138,7 +144,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Yes Please!",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/acc2.png",
+        ImageSource = "~/Content/images/acc2.png",
         IsImage = true,
         Style = "width:5rem"
       });
@@ -148,7 +154,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Yes Please!",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/acc3.png",
+        ImageSource = "~/Content/images/acc3.png",
         IsImage = true,
         Style = "width:5rem"
       });
@@ -158,7 +164,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Yes Please!",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/acc4.png",
+        ImageSource = "~/Content/images/acc4.png",
         IsImage = true,
         Style = "width:5rem"
       });
@@ -168,7 +174,7 @@ namespace HackathonMockup.Controllers
         ButtonText = "Yes Please!",
         Cost = 1000,
         Description = "",
-        ImageSource = "/Content/images/acc5.png",
+        ImageSource = "~/Content/images/acc5.png",
         IsImage = true,
         Style = "width:5rem"
       });
@@ -245,27 +251,27 @@ namespace HackathonMockup.Controllers
 
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava1.png"
+        ImageSource = "~/Content/images/ava1.png"
       });
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava2.png"
+        ImageSource = "~/Content/images/ava2.png"
       });
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava3.png"
+        ImageSource = "~/Content/images/ava3.png"
       });
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava4.png"
+        ImageSource = "~/Content/images/ava4.png"
       });
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava5.png"
+        ImageSource = "~/Content/images/ava5.png"
       });
       avatars.Add(new AvatarChange
       {
-        ImageSource = "/Content/images/ava6.png"
+        ImageSource = "~/Content/images/ava6.png"
       });
 
       //--------------------------------------

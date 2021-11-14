@@ -3,7 +3,7 @@
 <div class="list-inline h3">
   @if (Model.IsImage)
   {
-    <div class="list-inline-item" ><img src=@Model.ImageSource style="@Model.Style"/></div>
+    <div class="list-inline-item"><img src="@Url.Content(  @Model.ImageSource)" style="@Model.Style" /></div>
   }
   else
   {

@@ -1,9 +1,8 @@
 ﻿@model HackathonMockup.Models.Challenge
 
 <div class="@(Model.Complete ? "text-success" : "text-secondary") list-inline">
-  <div class="h3 list-inline-item">@Model.Content</div>
-  <div class=@(Model.Complete ? "glyphicon glyphicon-check" : "")></div>
+  <div class="h3 list-inline-item"><span class="@(Model.Complete ? "glyphicon glyphicon-check" : "")"></span>@Model.Content</div>
   <span class="list-inline-item italic bold">Reward: @Model.Reward points</span>
   <span class="list-inline-item italic bold">Expires @Model.Expires</span>
- <input type=@(Model.Complete ? "hidden" : "submit") value="Submit" /> 
+  <input type=@(Model.Complete ? "hidden" : "submit") value="Submit" />
 </div>
