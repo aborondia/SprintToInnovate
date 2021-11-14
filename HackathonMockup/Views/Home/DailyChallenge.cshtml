@@ -1,8 +1,20 @@
 ﻿@model HackathonMockup.Models.Challenge
 
-<div class="container">
-  <div class="h1">Daily Challenge</div>
-  <hr />
+<div class="row container-fluid">
+  <div class="col-md-6">
+    <div class="h1 card h-80">
+      Daily Challenge 1
+      <img src="~/Content/images/badge.png" class="card-img-top img-rounded shadow" style="width:200px" alt="...">
+    </div>
 
-  @Html.Partial("_Challengepartial", Model)
+    <div class="card-body">
+      <h5 class="card-title btn btn-danger">Details</h5>
+      @Html.Partial("_ChallengePartial", Model)
+    </div>
+    <div class="card-footer">
+      <strong class="text-muted">@DateTime.Today</strong>
+    </div>
+    <div />
+  </div>
+
 </div>
