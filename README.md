@@ -1,5 +1,4 @@
 # First Place Winner of Sprint to Innovate: The Innovation Challenge
-## Details:
 
 What: Access Credit Union Innovation Centre’s Sprint To Innovate: The Innovation Challenge
 
