@@ -10,15 +10,11 @@ Final pitches Sunday afternoon.
 
 Who: MITT Software Developer Students
 
-Team Awesome Possum: [Alex Gilmer](https://www.linkedin.com/in/alex-gilmer-4bb6b6210/), [Andrew Borondia](https://www.linkedin.com/in/aborondia/) , Hao Gong, and [Jie Chen](https://www.linkedin.com/in/jie-chen-sd-linkin/)
-Instructor Representative: [Jessica Watson](https://www.linkedin.com/in/coachjessicawatson/), SD Instructor & Internship Coordinator (encouraged participation and provided guidance getting set-up before the event)
+Team Awesome Possum: [Alex Gilmer](https://www.linkedin.com/in/alex-gilmer-4bb6b6210/), [Andrew Borondia](https://www.linkedin.com/in/aborondia/) , Hao Gong, and [Jie Chen](https://www.linkedin.com/in/chen-jie-90371613a/)
+Instructor Representative: [Jessica Watson](https://www.linkedin.com/in/coachjessicawatson/), SD Instructor & Internship Coordinator (encouraged participation and provided guidance getting set up before the event)
 Challenge Mentor: [Denise Desrosiers](https://www.linkedin.com/in/denisedesrosiers/), a Business Analyst or the MB Government mentored the team and provided invaluable feedback.
 
 Somewhere from 17-20 teams of MB post-secondary students participated with representation from U of M, U of W, RRC, and MITT. The vast majority of students were business students.
-
-Event Description:
-https://www.rrc.ca/informationsystems/2021/09/23/sprint-to-innovate-the-innovation-challenge/ 
-
 
 “Sprint to Innovate pulls together students of various disciplines (technology, business, entrepreneurship, etc) from Manitoba post-secondary institutions (including our international partners) to learn about innovation, and collaborate in a fun and exciting challenge to build a minimum viable prototype in just two days.
 Do you want to learn how to be innovative, and win some money?
@@ -33,8 +29,6 @@ The team of students worked all weekend to create their solution to the proposed
 Team lead, Alex Gilmer, delivered a well-thought-out, aesthetically pleasing, and persuasive pitch on Sunday afternoon. **The team of four ended up winning first place and taking home the prize of $5,000 to share.**
 
 Team Awesome Possum put together a solution for creating engagement in the online learning environment by creating gamification software to enhance the student experience. Gamification adds achievements, points, and rewards into the day-to-day learning platform to encourage students to complete challenges and increase their scores in the class as well as their overall understanding of the learning outcomes. 
-
-Link to Prototype Website: https://bsite.net/aborondia/ 
 
 Link to Slidedeck Presentation: https://drive.google.com/file/d/1oVsMS0O50qj-W4gMTapwtcp6O-Exv4Oq/view?usp=sharing 
 
